@@ -93,7 +93,7 @@ html {
 }
 
 .hero-section {
-  min-height: 100vh;
+  min-height: 75vh;
   padding: 150px 0 90px;
   display: flex;
   align-items: center;
@@ -138,77 +138,69 @@ html {
   filter: blur(40px);
 }
 
-.hero-clean {
-  max-width: 850px;
-}
-
 .hero-kicker {
   color: #9b5ac9;
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 25px;
-}
-
-.hero-clean h1 {
-  font-size: 4.3rem;
-  font-weight: 700;
-  color: #4a3f55;
-  margin: 20px 0 10px;
-  line-height: 1;
-}
-.hero-clean h1 span {
-  color: #9b5ac9;
-  display: block;
-  font-size: 0.75em;
+  padding-bottom: 15px;
 }
 
 .hero-subtitle {
-  max-width: 620px;
-  margin: 0 auto;
-  font-size: 1.2rem;
+  max-width: 550px;
+  font-size: 1.35rem;
   line-height: 1.7;
-  color: #4a3f55;
-}
-
-.hero-text {
-  max-width: 720px;
-  font-size: 1.2rem;
   margin-top: 20px;
   color: #4a3f55;
 }
 
-.hero-info {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.hero-info span {
-  background: white;
-  padding: 10px 18px;
-  border-radius: 25px;
-  box-shadow: 0 6px 18px rgba(155, 90, 201, 0.12);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 .hero-buttons {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
-  gap: 18px;
+  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .hero-tech {
+  display: flex;
+  gap: 40px;
   font-size: 2.3rem;
   color: #9b5ac9;
-  margin: 30px 0;
+  margin: 35px 0;
+  justify-content: center;
 }
 
-.hero-tech i {
-  margin: 0 14px;
+.hero-left {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #4a3f55;
+  line-height: 1.05;
+}
+
+.hero-img {
+  width: 100%;
+  height: 550px;
+  max-width: 650px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(94, 75, 125, 0.20);
+}
+
+.hero-left .hero-subtitle {
+  max-width: 620px;
+  margin: 30px auto 0;
 }
 
 h1 {
@@ -459,5 +451,36 @@ footer {
   .skill-card i,
   .skill-card .excel-icon {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-left {
+    text-align: center !important;
+  }
+
+  .hero-left .hero-subtitle {
+    margin: 25px auto 0;
+  }
+
+  .hero-left .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-subtitle {
+    margin: 25px auto 0;
+  }
+
+  .hero-tech {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 85%;
+    margin-top: 40px;
   }
 }
